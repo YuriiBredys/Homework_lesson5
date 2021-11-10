@@ -19,7 +19,7 @@ public:
 		return 3.141 * R * R;
 	}
 private:
-         double R;
+        double R;
 };
 
 class Rectangle : public Shape
