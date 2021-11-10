@@ -6,31 +6,33 @@ class Shape
 public:
 	Shape() {}
 	virtual double area() = 0;
-    virtual ~Shape() {}
+        virtual ~Shape() {}
 };
 
 class Circle : public Shape
 {
-private:
-	double R;
+
 public:
 	Circle(double r): R(r) {}
 	double area()
 	{
 		return 3.141 * R * R;
 	}
+private:
+         double R;
 };
 
 class Rectangle : public Shape
 {
-private:
-	double A, B;
+
 public:
 	Rectangle(double a, double b) : A(a), B(b) {}
 	double area() 
 	{
 		return A * B;
 	}
+private:
+	double A, B;
 };
 
 class Square : public Rectangle
